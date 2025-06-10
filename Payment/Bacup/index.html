@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>ডোনেট করুন</h2>
+        <form id="donationForm">
+            <input type="text" id="name" placeholder="আপনার নাম" required>
+            <input type="email" id="email" placeholder="আপনার ইমেইল" required>
+            <input type="tel" id="phone" placeholder="আপনার ফোন নাম্বার" required>
+            <input type="number" id="amount" placeholder="ডোনেশন পরিমাণ (৳)" required>
+
+            <h3>পেমেন্ট মাধ্যম নির্বাচন করুন</h3>
+            <select id="paymentMethod" required>
+                <option value="">-- পেমেন্ট মাধ্যম নির্বাচন করুন --</option>
+                <option value="bkash">বিকাশ</option>
+                <option value="nagad">নগদ</option>
+                <option value="rocket">রকেট</option>
+            </select>
+
+            <!-- QR কোড এবং নাম্বার দেখানোর জন্য -->
+            <div id="paymentDetails" style="display: none;">
+                <img id="qrCode" src="" alt="QR Code" style="width: 150px; margin-top: 10px;">
+                <p><strong>পেমেন্ট নাম্বার:</strong> <span id="paymentNumber"></span></p>
+            </div>
+
+            <button type="submit">সাবমিট করুন</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

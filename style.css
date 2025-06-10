@@ -1,0 +1,374 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Navigation Bar */
+.navbg {
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 51px;
+    width: 197px;
+    object-fit: contain;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: anchor-center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(46, 192, 65);
+}
+#navbutton a button {
+    width: 110px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 40px;
+    background-color: #0dc10d;
+}
+
+/* Slider Section */
+
+.min-slider{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+}
+.min-slider img{
+    height: 808px;
+    width: 1500px;
+    padding-top: 13px;
+}
+
+.arrow{
+    cursor: pointer;
+    height:150px ;
+}
+.left{
+    transform: rotate(180deg);
+}
+.frame{
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: -1px 1px 10px rgba(0, 0, 0,.5);
+}
+.slider{
+    display: flex;
+    transition: all 1s ease;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Container Section */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    background-color: #ebebeb;
+}
+.parent{
+    text-align: center;
+    height: 70px;
+   
+    width: 2500px;
+    justify-content: center;
+    padding-top: 10px;
+}
+.main {
+    background-color: #ffffff;
+    width: 473px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.img h3 {
+    text-align: center;
+    color: rgb(12, 119, 35);
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+p {
+    padding: 10px;
+    text-align: justify;
+    font-size: 20px;
+    color: #333;
+}
+.bg{
+    color: rgb(0, 0, 0);
+    padding-left: 230px;
+    padding-right: 230px;
+}
+.hading{
+    padding-left: 230px;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+}
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 400px;
+}
+
+button:hover {
+    background-color: rgb(8, 151, 8);
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(157, 172, 171);
+    padding: 40px 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col {
+    width: 25%;
+    padding: 10px;
+}
+
+.col h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.col ul li a {
+    color: #38663c;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.col ul li a:hover {
+    color: white;
+}
+
+/* Responsive Design */
+@media(max-width:2300px){
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 200px;
+        padding-right: 200px;
+        background-color: #ebebeb;
+    }
+}
+@media (max-width:1880px) {
+    .bg{
+        padding-left: 216px;
+        padding-right: 216px;
+        color: rgb(0, 0, 0);
+    }
+}
+@media (max-width:1440px) {
+    .bg{
+        padding-left: 10px;
+        padding-right: 10px;
+        color: rgb(0, 0, 0);
+    }
+    .min-slider img{
+        height: 711px;
+        width: 100%;
+    }
+    .hading{
+        padding-left: 5px;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        background-color: #ebebeb;
+    }
+    
+}
+@media (max-width:768px) {
+    .logo {
+        height: 23px;
+        width: 192px;
+        object-fit: contain;
+        margin-top: 5px;
+    }
+    #navbutton a button {
+        width: 70px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-radius: 40px;
+        background-color: #0dc10d;
+        font-size: 14px;
+    }
+    
+    
+    .child{
+        font-size: 16px;
+    }
+    .min-slider img{
+        height: 300px;
+        width: 95%;
+    }
+    .bg{
+        padding-left: 5px;
+        padding-right: 5px;
+        color: rgb(0, 0, 0);
+    }
+    .hading{
+        padding-left: 5px;
+    }
+    button {
+        display: block;
+        margin: 10px auto;
+        padding: 10px 20px;
+        background-color: green;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 200px;
+        
+    }
+    p {
+        padding: 10px;
+        text-align: justify;
+        font-size: 14px;
+        color: #333;
+    }
+}
+@media (max-width: 360px) {
+    .min-slider img{
+        height: 259px;
+        width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    .slider {
+        max-height: 400px;
+    }
+
+    .col {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 1px 5%;
+        
+    }
+
+    nav ul {
+        margin-top: 5px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .slider {
+        max-height: 300px;
+    }
+
+    .main {
+        width: 90%;
+    }
+
+    .col {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 24px;
+    }
+   
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .slider {
+        max-height: 250px;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .col {
+        width: 100%;
+    }
+}
